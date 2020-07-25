@@ -5,8 +5,8 @@
   "background_color": "#def6c0",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/",
-  "start_url": "/",
+  "Scope": "/kshitij-ngo",
+  "start_url": "/kshitij-ngo",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
