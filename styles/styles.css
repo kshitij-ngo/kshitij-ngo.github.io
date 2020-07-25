@@ -1,0 +1,126 @@
+:root {
+  --logo-dark: #7ebe43;
+  --logo-light: #def6c0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+}
+
+#brand img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+section {
+  min-height: 100vh;
+}
+
+header {
+  height: 70px;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: 0 30px;
+  border-bottom: 0.1px solid var(--logo-dark);
+  transition: background 0.5s;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul li {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  margin: 10px;
+  text-decoration: none;
+  color: var(--logo-dark);
+  display: flex;
+  justify-content: center;
+}
+
+.cta-btn {
+  background-color: var(--logo-light);
+  border-radius: 5px;
+  border: 2px solid;
+  width: 70px;
+  padding: 10px 7px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.hero-section {
+  padding-top: 70px;
+  background-image: url(../images/kshitij_ngo.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+.hero-div {
+  z-index: 10;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-div p {
+  font-size: 1.1rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cta-container .cta-btn {
+  width: 100px;
+}
+
+header .cta-btn.donate-btn {
+  background-color: transparent;
+  color: var(--logo-dark);
+}
+
+.cta-btn.donate-btn {
+  background-color: transparent;
+  color: white;
+}
+
+.cta-btn:hover {
+  background-color: var(--logo-dark);
+  color: var(--logo-light);
+}
