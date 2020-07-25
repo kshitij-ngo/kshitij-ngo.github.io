@@ -5,8 +5,8 @@
   "background_color": "#def6c0",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/",
-  "start_url": "/",
+  "Scope": "/kshitij-ngo",
+  "start_url": "/kshitij-ngo",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
@@ -46,6 +46,11 @@
     {
       "src": "images/icons/icon-512x512.png",
       "sizes": "502x502",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icons/icon-512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
