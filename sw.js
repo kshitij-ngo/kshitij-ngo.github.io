@@ -1,5 +1,4 @@
-const cacheName = "Kshitij";
-
+const cacheName = "kshitij";
 const staticFiles = [
   "./",
   "./index.html",
