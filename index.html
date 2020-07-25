@@ -8,6 +8,13 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel='manifest' href='./manifest.json'>
+    <script>
+        // Registering our Service worker
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('sw.js', { scope: './' })
+        }
+      </script>
     <title>Kshitij | Mere Pankh Mera Aasmaa</title>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
@@ -53,6 +60,19 @@
               >
               </div>
           </div>
+      </section>
+      <section id="our-story">
+          <h1>How it all began</h1>
+          <p>
+            An idea struck on my mind while i was traveling from Patna to Pathankot, it was a long journey and i didn't have an android phone. So, i was just peeping out of the glass window. Stations changed one by one but every station had one common scenario- the begging children.
+            Some younger and some of my age that was 15 that time.
+            I was affected, tears rolled down quietly and i thought why can't I help them all.</p>
+            <p>
+            Soon after i returned from that trip, i discussed this with my best friend Yashika and she motivated me to help the children around us. Some more friends joined me and we collected money and brought basic study kits for around 50 children, as my father told me that education is the key to everything, it gives access to whatever we want in our life. 
+            Since then we have been teaching and sharing some beautiful moments with those less privileged children.
+            We have more than 30 active volunteers working for more than 300 children.
+          </p>
+          <p class="right">- Vaishnavi (Founder & Trustee)</p>
       </section>
       <section id="gallery"></section>
     </main>

@@ -1,5 +1,5 @@
 :root {
-  --logo-dark: #7ebe43;
+  --logo-dark: #4f933a;
   --logo-light: #def6c0;
 }
 * {
@@ -11,6 +11,15 @@
 }
 body {
   min-height: 100vh;
+  color: #999;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #555;
 }
 
 #brand img {
@@ -20,6 +29,13 @@ body {
 
 section {
   min-height: 100vh;
+  padding: 15px 10px;
+  /* border-bottom: 5px solid rgba(0, 0, 0, 0.8); */
+}
+
+section:not(.hero-section) {
+  width: 70%;
+  margin: auto;
 }
 
 header {
@@ -30,7 +46,7 @@ header {
   z-index: 100;
   padding: 0 30px;
   border-bottom: 0.1px solid var(--logo-dark);
-  transition: background 0.5s;
+  transition: background 0.3s;
 }
 
 header nav ul {
@@ -83,17 +99,21 @@ a {
 }
 .hero-div {
   z-index: 10;
-  color: white;
+  color: white !important;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
   text-align: center;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.hero-div h1 {
+  color: white;
 }
 
 .hero-div p {
@@ -123,4 +143,28 @@ header .cta-btn.donate-btn {
 .cta-btn:hover {
   background-color: var(--logo-dark);
   color: var(--logo-light);
+}
+
+section h1 {
+  text-align: center;
+  font-size: bold;
+}
+section p {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+p.right {
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  header {
+    bottom: 0;
+    position: fixed;
+    border-top: 2px solid var(--logo-dark);
+    border-bottom: none;
+  }
+  section:not(.hero-section) {
+    width: 90%;
+  }
 }
