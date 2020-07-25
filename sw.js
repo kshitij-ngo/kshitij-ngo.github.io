@@ -1,16 +1,21 @@
 const cacheName = "Kshitij";
 
+const staticFiles = [
+  "./",
+  "./index.html",
+  "./manifest.json",
+  "./scripts/script.js",
+  "./styles/styles.css",
+  "./images/",
+];
+
 // Cache all the files to make a PWA
 self.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(cacheName).then((cache) => {
       // Our application only has two files here index.html and manifest.json
       // but you can add more such as style.css as your app grows
-      return cache.addAll([
-        "/kshitij-ngo",
-        "/kshitij-ngo/index.html",
-        "/kshitij-ngo/manifest.json",
-      ]);
+      return cache.addAll(staticFiles);
     })
   );
 });
@@ -27,4 +32,8 @@ self.addEventListener("fetch", (event) => {
         return response || fetch(event.request);
       })
   );
+});
+
+self.addEventListener("activate", (e) => {
+  self.clients.claim();
 });
