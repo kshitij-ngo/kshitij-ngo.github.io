@@ -5,7 +5,6 @@ const staticFiles = [
   "./manifest.json",
   "./scripts/script.js",
   "./styles/styles.css",
-  "./images/",
 ];
 
 // Cache all the files to make a PWA
