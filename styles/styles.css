@@ -1,6 +1,6 @@
 :root {
-  --logo-dark: #4f933a;
-  --logo-light: #def6c0;
+  --logo-dark: rgb(79, 147, 58);
+  --logo-light: rgb(222, 246, 192);
 }
 * {
   margin: 0;
@@ -33,8 +33,17 @@ section {
   /* border-bottom: 5px solid rgba(0, 0, 0, 0.8); */
 }
 
-section:not(.hero-section) {
+section .container {
+  margin: 10px auto;
   width: 70%;
+}
+
+section:nth-of-type(2n) {
+  background-color: rgba(222, 246, 192, 0.3);
+}
+
+section:not(.hero-section) {
+  width: 100%;
   margin: auto;
 }
 
@@ -148,9 +157,13 @@ header .cta-btn.donate-btn {
   color: var(--logo-light);
 }
 
-section h1 {
+section h1,
+h2,
+h3 {
   text-align: center;
   font-size: bold;
+  text-transform: uppercase;
+  margin: 10px;
 }
 section p {
   font-size: 1.2rem;
@@ -160,6 +173,30 @@ p.right {
   text-align: right;
 }
 
+.img-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 10px auto;
+}
+.img-cards .img-card {
+  width: 20%;
+  box-shadow: 0 2px 5px #f0f0f0;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.img-cards .img-card img {
+  width: 100%;
+}
+
+.img-cards .img-card p {
+  font-size: 1rem;
+}
+
 @media (max-width: 700px) {
   header {
     bottom: 0;
@@ -167,7 +204,12 @@ p.right {
     border-top: 2px solid var(--logo-dark);
     border-bottom: none;
   }
-  section:not(.hero-section) {
+
+  section .container {
+    width: 90%;
+  }
+
+  .img-cards .img-card {
     width: 90%;
   }
 }
