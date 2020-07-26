@@ -1,5 +1,11 @@
 const cacheName = "kshitij";
-const staticFiles = ["./", "./index.html", "./manifest.json"];
+const staticFiles = [
+  "./",
+  "./index.html",
+  "./manifest.json",
+  "./scripts/script.js",
+  "./styles/styles.css",
+];
 
 // Cache all the files to make a PWA
 self.addEventListener("install", (e) => {
