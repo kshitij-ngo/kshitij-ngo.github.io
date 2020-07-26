@@ -102,6 +102,9 @@ a i {
   background-attachment: fixed;
   position: relative;
 }
+.hero-section.donation {
+  background-image: url(../images/gallery5.jpg);
+}
 .hero-section::before {
   content: "";
   position: absolute;
@@ -127,7 +130,8 @@ a i {
   align-items: center;
 }
 
-.hero-div h1 {
+.hero-div h1,
+h2 {
   color: white;
 }
 

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta name="theme-color" content="#4f933a" />
+    <meta name="title" content="Kshitij - Mere Pankh Mera Aasmaa" />
+    <meta name="description" content="A free school for unprivileged kids. " />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kshitij-ngo.github.io" />
+    <meta property="og:title" content="Kshitij - Mere Pankh Mera Aasmaa" />
+    <meta
+      property="og:description"
+      content="A free school for unprivileged kids. "
+    />
+    <meta
+      property="og:image"
+      content="https://kshitij-ngo.github.io/images/kshitij_ngo.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://kshitij-ngo.github.io/" />
+    <meta property="twitter:title" content="Kshitij - Mere Pankh Mera Aasmaa" />
+    <meta
+      property="twitter:description"
+      content="A free school for unprivileged kids. "
+    />
+    <meta
+      property="twitter:image"
+      content="https://kshitij-ngo.github.io/images/kshitij_ngo.jpg"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./images/kshitij_logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="canonical" href="https://kshitij-ngo.github.io" />
+    <link rel="manifest" href="./manifest.json" />
+    <script>
+      // Registering our Service worker
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./sw.js", { scope: "/" });
+      }
+    </script>
+    <title>Kshitij | Mere Pankh Mera Aasmaa</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a class="cta-btn" href="https://forms.gle/bkQGDaWhWBunPB2GA"
+              >Volunteer</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/kshitij_ngo_/"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/"
+              ><div id="brand">
+                <img src="./images/kshitij_logo.png" alt="Kshitij logo" /></div
+            ></a>
+          </li>
+          <li>
+            <a href="/#gallery"
+              ><i class="fa fa-picture-o" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="cta-btn donate-btn"
+              href="https://www.instamojo.com/arpancodes/kshitij-ngo-donation/"
+              >Donate</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-section" class="hero-section donation">
+        <div class="hero-div">
+          <h1>Thank You For Donation</h1>
+          <p>and giving us the strength to move forward.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      &copy; Kshitij | 2016 - 2020
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
