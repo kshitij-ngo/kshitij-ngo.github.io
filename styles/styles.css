@@ -84,9 +84,48 @@ a {
   color: var(--logo-dark);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 a i {
   font-size: 2.5rem !important;
+}
+
+nav.hidden-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.959);
+  width: 100%;
+  z-index: 500;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in;
+  padding: 20px;
+}
+
+nav.hidden-nav ul {
+  display: block;
+}
+
+nav.hidden-nav li {
+  border-bottom: 1px solid;
+  width: 100%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+nav.hidden-nav li a {
+  width: 100%;
+  height: 100%;
+}
+
+nav.hidden-nav .close {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: var(--logo-dark);
+}
+nav.hidden-nav.shown {
+  transform: translateX(0%);
 }
 
 .cta-btn {
@@ -297,6 +336,40 @@ footer {
   footer {
     margin-bottom: 70px;
   }
+}
+
+#contact-us .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact-us .container a,
+#contact-us .container p {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 0;
+}
+#contact-us .container p {
+  display: block;
+}
+
+#contact-us .container form {
+  display: inline-block;
+  margin: 10px;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+}
+input,
+textarea {
+  display: block;
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
 }
 
 @keyframes installShow {

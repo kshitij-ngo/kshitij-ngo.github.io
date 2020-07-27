@@ -2,6 +2,8 @@ const cacheName = "kshitij";
 const staticFiles = [
   "./",
   "./index.html",
+  "./contact-us.html",
+  "./donation-confirmation.html",
   "./manifest.json",
   "./scripts/script.js",
   "./styles/styles.css",
