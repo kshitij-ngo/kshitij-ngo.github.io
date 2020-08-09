@@ -261,8 +261,10 @@ p.right {
 .img-gallery a {
   width: 29%;
   margin: 10px;
-  border: 5px solid var(--logo-dark);
+  border: 2px solid var(--logo-dark);
   border-radius: 7px;
+  background-color: white;
+  box-shadow: 0 2px 5px var(--logo-dark);
 }
 .img-gallery a img {
   object-fit: cover;
