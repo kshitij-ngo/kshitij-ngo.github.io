@@ -335,6 +335,8 @@ footer {
   }
   .img-gallery a {
     width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px var(--logo-dark);
   }
 
   footer {
